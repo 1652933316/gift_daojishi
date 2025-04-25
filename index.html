@@ -1,7 +1,7 @@
 <!DOCTYPE html><!-- This web page is copied by "https://comccom.com/" --><html><head><meta charset="utf-8">
 
 <title>节日快乐</title>
-
+<link type="text/css" rel="stylesheet" href="static/css/theme_public_btn.css">
 
 </head><body>
 
@@ -16,6 +16,7 @@ html,body{
 </style>
     <!--统计-->
 <script charset="UTF-8" id="LA_COLLECT" src="static/js/js-sdk-pro.min.js"></script>
+<script src='static/js/theme_common.js'></script>
 <script>LA.init({id:"JkV63okvFHrHwPbJ",ck:"JkV63okvFHrHwPbJ"})</script>
 
 
@@ -347,7 +348,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('|#countdown 3}|祝|最帅的|蔡老师|班主任|节日快乐！|#rectangle|');
+      S.UI.simulate('|#countdown 3}|祝|37同学|生日快乐|岁岁平安！|#rectangle|');
     }
 
     S.Drawing.loop(function () {
@@ -1063,12 +1064,43 @@ S.init();
 <body>
     
 			
-    <div id="btn">
-        <audio id="audio-player" ref="audio" preload="preload" autoplay="autoplay" loop="loop">
-            <source src="https://sf3-cdn-tos.douyinstatic.com/obj/ies-music/6912000651149331213.mp3" type="audio/mpeg"><!--con10音乐链接-->
-            Your browser does not support the audio tag.
-        </audio>
-    </div>
+<!--    <div id='div_btn_container'> &lt;!&ndash; 按钮部分的最外层，处于文档流之中 &ndash;&gt;-->
+<!--            <div id="div_btn_inner"> &lt;!&ndash; 按钮部分内层，用于定位 &ndash;&gt;-->
+
+<!--                <div class='div_music_tips'></div>-->
+<!--                <div class="div_btn" id="div_music" onclick="music_switch()"> &lt;!&ndash; 音乐按钮部分 &ndash;&gt;-->
+<!--                    <img id='img_music' src='static/images/music_note_big.png' style='-webkit-animation:music_play_rotate 1s linear infinite'>-->
+<!--                    <audio id="audio_music" autoplay="autoplay" loop="loop">-->
+<!--                        <source type="audio/mpeg"/>-->
+<!--                        &lt;!&ndash; 您的浏览器不支持播放音乐 &ndash;&gt;-->
+<!--                    </audio>-->
+<!--                </div>-->
+
+<!--                <div class='div_record_tips'></div>-->
+<!--                <div class="div_btn" id="div_record" onclick="record_switch()"> &lt;!&ndash; 录音按钮部分 &ndash;&gt;-->
+<!--                    语音-->
+<!--                    <audio id="audio_record" loop="loop">-->
+<!--                        <source type="audio/mpeg"/>-->
+<!--                        &lt;!&ndash; 您的浏览器不支持播放音乐 &ndash;&gt;-->
+<!--                    </audio>-->
+<!--                </div>-->
+
+<!--                &lt;!&ndash; 只在提交状态显示 只在提交状态显示 只在提交状态显示 只在提交状态显示 &ndash;&gt;-->
+<!--                &lt;!&ndash; <div class="div_btn" id='div_support'>-->
+<!--                        <a href="http://888.1dly.cn/9998"><span>更多</span></a>-->
+<!--                    </div>   &ndash;&gt;-->
+<!--                &lt;!&ndash; 只在提交状态显示 只在提交状态显示 只在提交状态显示 只在提交状态显示 &ndash;&gt;-->
+
+<!--                &lt;!&ndash; 只在未提交状态显示 只在未提交状态显示 只在未提交状态显示 只在未提交状态显示 &ndash;&gt;-->
+
+<!--                &lt;!&ndash; 只在未提交状态显示 只在未提交状态显示 只在未提交状态显示 只在未提交状态显示 &ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<script src="static/js/jquery-2.0.3.min.js"></script>
+    <script src="static/js/typed.min.js"></script>
+    <script src="static/js/support_upload_as.js"></script>
+    <script src="static/js/jweixin-1.2.0.js"></script>
 </body>
 
 </html>
@@ -1159,7 +1191,7 @@ S.init();
 
         	<style>
 			 #div_btn_inner{ /*按钮部分内层，用于定位*/
-            color:white; 
+            color:white;
             text-shadow:1px 1px 1px #000;            
             width: 500px;
             padding-left: 430px;
