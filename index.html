@@ -603,9 +603,9 @@ S.UI = (function () {
     //   }
     // });
 
-    canvas.addEventListener('click', function (e) {
-      overlay.classList.remove('overlay--visible');
-    });
+<!--    canvas.addEventListener('click', function (e) {-->
+<!--      overlay.classList.remove('overlay&#45;&#45;visible');-->
+<!--    });-->
   }
 
   function init() {
@@ -1063,40 +1063,45 @@ S.init();
 
 <body>
     
-			
-<!--    <div id='div_btn_container'> &lt;!&ndash; 按钮部分的最外层，处于文档流之中 &ndash;&gt;-->
-<!--            <div id="div_btn_inner"> &lt;!&ndash; 按钮部分内层，用于定位 &ndash;&gt;-->
-
-<!--                <div class='div_music_tips'></div>-->
-<!--                <div class="div_btn" id="div_music" onclick="music_switch()"> &lt;!&ndash; 音乐按钮部分 &ndash;&gt;-->
-<!--                    <img id='img_music' src='static/images/music_note_big.png' style='-webkit-animation:music_play_rotate 1s linear infinite'>-->
-<!--                    <audio id="audio_music" autoplay="autoplay" loop="loop">-->
-<!--                        <source type="audio/mpeg"/>-->
-<!--                        &lt;!&ndash; 您的浏览器不支持播放音乐 &ndash;&gt;-->
-<!--                    </audio>-->
-<!--                </div>-->
-
-<!--                <div class='div_record_tips'></div>-->
-<!--                <div class="div_btn" id="div_record" onclick="record_switch()"> &lt;!&ndash; 录音按钮部分 &ndash;&gt;-->
-<!--                    语音-->
-<!--                    <audio id="audio_record" loop="loop">-->
-<!--                        <source type="audio/mpeg"/>-->
-<!--                        &lt;!&ndash; 您的浏览器不支持播放音乐 &ndash;&gt;-->
-<!--                    </audio>-->
-<!--                </div>-->
-
-<!--                &lt;!&ndash; 只在提交状态显示 只在提交状态显示 只在提交状态显示 只在提交状态显示 &ndash;&gt;-->
-<!--                &lt;!&ndash; <div class="div_btn" id='div_support'>-->
-<!--                        <a href="http://888.1dly.cn/9998"><span>更多</span></a>-->
-<!--                    </div>   &ndash;&gt;-->
-<!--                &lt;!&ndash; 只在提交状态显示 只在提交状态显示 只在提交状态显示 只在提交状态显示 &ndash;&gt;-->
-
-<!--                &lt;!&ndash; 只在未提交状态显示 只在未提交状态显示 只在未提交状态显示 只在未提交状态显示 &ndash;&gt;-->
-
-<!--                &lt;!&ndash; 只在未提交状态显示 只在未提交状态显示 只在未提交状态显示 只在未提交状态显示 &ndash;&gt;-->
-<!--            </div>-->
-<!--        </div>-->
+<!--			<div id="btn">-->
+<!--        <audio id="audio-player" ref="audio" preload="preload" autoplay="autoplay" loop="loop">-->
+<!--            <source src="https://sf3-cdn-tos.douyinstatic.com/obj/ies-music/6912000651149331213.mp3" type="audio/mpeg">&lt;!&ndash;con10音乐链接&ndash;&gt;-->
+<!--            Your browser does not support the audio tag.-->
+<!--        </audio>-->
 <!--    </div>-->
+    <div id='div_btn_container'> <!-- 按钮部分的最外层，处于文档流之中 -->
+            <div id="btn"> <!-- 按钮部分内层，用于定位 -->
+
+                <div class='div_music_tips'></div>
+                <div class="btn" id="div_music" onclick="music_switch()"> <!-- 音乐按钮部分 -->
+                    <img id='img_music' src='static/images/music_note_big.png' style='-webkit-animation:music_play_rotate 1s linear infinite'>
+                    <audio id="audio-player" autoplay="autoplay" loop="loop">
+                        <source src="https://sf3-cdn-tos.douyinstatic.com/obj/ies-music/6912000651149331213.mp3" type="audio/mpeg"/>
+                        <!-- 您的浏览器不支持播放音乐 -->
+                    </audio>
+                </div>
+
+                <div class='div_record_tips'></div>
+                <div class="div_btn" style="display:None" id="div_record" onclick="record_switch()"> <!-- 录音按钮部分 -->
+                    语音
+                    <audio id="audio_record" loop="loop">
+                        <source type="audio/mpeg"/>
+                        <!-- 您的浏览器不支持播放音乐 -->
+                    </audio>
+                </div>
+
+                <!-- 只在提交状态显示 只在提交状态显示 只在提交状态显示 只在提交状态显示 -->
+                <!-- <div class="div_btn" id='div_support'>
+                        <a href="http://888.1dly.cn/9998"><span>更多</span></a>
+                    </div>   -->
+                <!-- 只在提交状态显示 只在提交状态显示 只在提交状态显示 只在提交状态显示 -->
+
+                <!-- 只在未提交状态显示 只在未提交状态显示 只在未提交状态显示 只在未提交状态显示 -->
+
+                <!-- 只在未提交状态显示 只在未提交状态显示 只在未提交状态显示 只在未提交状态显示 -->
+            </div>
+        </div>
+    </div>
 <script src="static/js/jquery-2.0.3.min.js"></script>
     <script src="static/js/typed.min.js"></script>
     <script src="static/js/support_upload_as.js"></script>
